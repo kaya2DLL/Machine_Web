@@ -1,0 +1,37 @@
+﻿@model MyViewModel
+<div class="card-group">
+    <!--MAKİNE VE KULANICI BİLGİSİ -->
+    <div class="card mb-3 me-5 rounded-end shadowB cardC" style="max-width: 520px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="/Machine/plc.png" class="img-fluid p-1" alt="...">
+            </div>
+
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title h3">Makine Sayısı: </h5>
+                    <p class="card-text h1 d-flex justify-content-center"> @Model.MachinesList.Count()</p>
+                    <div class="card-footer"><p class="footer"> Güncelleme tarihi :@DateTime.Now</p></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="card mb-3 me-5 shadowB rounded cardC" style="max-width: 520px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="/Machine/pngwing.com.png" class="img-fluid  p-1" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title h3 ">Kullanıcı Sayısı</h5>
+                    <p class="card-text h1 d-flex justify-content-center "> @Model.MachinesList.Count()</p>
+                    <div class="card-footer"><p class="footer">Güncelleme tarihi : @DateTime.Now</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<partial name="_machineCard" />
+

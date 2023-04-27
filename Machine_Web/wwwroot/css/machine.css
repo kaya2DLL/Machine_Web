@@ -1,0 +1,48 @@
+body{
+  background: hsla(185, 64%, 51%, 1);
+
+background: linear-gradient(90deg, hsla(185, 64%, 51%, 1) 0%, hsla(277, 74%, 24%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(185, 64%, 51%, 1) 0%, hsla(277, 74%, 24%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(185, 64%, 51%, 1) 0%, hsla(277, 74%, 24%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#30C5D2", endColorstr="#471069", GradientType=1 ); ;
+    color: rgb(0, 0, 0);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+ body::-webkit-scrollbar{
+    display: none;
+    
+  } 
+
+  .shadowB{
+    -webkit-box-shadow: 3px 1px 15px 0px rgba(0,0,0,1);
+-moz-box-shadow: 3px 1px 15px 0px rgba(0,0,0,1);
+box-shadow: 3px 0px 10px 0px rgb(0, 0, 0);
+
+  }
+  /* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+.sidebarC{
+  background-color:rgb(69, 33, 115);
+}
+.cardC{
+  background: hsla(57, 100%, 50%, 1);
+
+background: linear-gradient(0deg, hsla(57, 100%, 50%, 1) 0%, hsla(268, 85%, 51%, 1) 100%);
+
+background: -moz-linear-gradient(0deg, hsla(57, 100%, 50%, 1) 0%, hsla(268, 85%, 51%, 1) 100%);
+
+background: -webkit-linear-gradient(0deg, hsla(57, 100%, 50%, 1) 0%, hsla(268, 85%, 51%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#fff200", endColorstr="#7b18ec", GradientType=1 );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF1B6B", endColorstr="#45CAFF", GradientType=1 );
+}
+
+.tbl{
+  border:1px ;
+}

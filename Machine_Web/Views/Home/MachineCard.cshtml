@@ -1,0 +1,40 @@
+﻿@model MyViewModel
+
+
+<div class=" row card-group ">
+    @foreach (var item in Model.MachinesList)
+    {
+        <div class="col-4 col-md-4 ">
+            <div class=" mt-3 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title h3">@item.Name </h3>
+                    </div>
+                    <div class="card-body">
+                        @foreach (var item2 in Model.PLCQualityCriterionDatasList.OrderByDescending(x => x.Times).Take(1).ToList())
+                        {
+                            TimeSpan date = item2.Times.TimeOfDay;
+                            TimeSpan total = DateTime.Now.TimeOfDay.Subtract(date);
+                            if (total.Minutes > 1)
+                            {
+                                <p>Machines Sitation: <button class="btn btn-danger"> Doesn't Working </button></p>
+
+                            }
+                            else
+                            {
+                                <p>Machines Sitation:<button class="btn btn-success"> Working </button></p>
+                            }
+
+                        }
+
+
+                        <a href="/home/details/@item.ConnectionID" class="btn btn-primary float-end">Go to Machine</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+
+</div>
